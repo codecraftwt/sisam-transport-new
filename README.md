@@ -21,3 +21,4 @@ npm install  @react-three/fiber @react-three/drei
 npm i @react-three/postprocessing
 npm i lucide-react
 npm install react-icons
+npm install react-router-dom

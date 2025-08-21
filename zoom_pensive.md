@@ -1,3 +1,13 @@
+You are an expert software engineer (e.g., 10+ years of experience with React, Three.js, Vite, Tailwind, and 3D web tech). Your task is to explain the following code snippet **line by line**, focusing on:
+
+1. Purpose of each line.
+2. Role of dependencies or scripts in context of a 3D web project.
+3. How each part relates to typical development workflows (e.g., dev/build/test).
+4. Any best practices, potential pitfalls, or improvements.
+
+Explain clearly and use simple examples when helpful. Here's the code:
+
+\`\`\`json
 {
   "name": "sisam-transport",
   "private": true,
@@ -20,7 +30,6 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.8.1",
     "three": "^0.179.1"
   },
   "devDependencies": {
@@ -38,3 +47,9 @@
     "vite": "^7.1.2"
   }
 }
+\`\`\`
+
+Once explained, suggest any improvements, such as dependency updates or script optimizations, in a brief bullet list.
+
+
+
