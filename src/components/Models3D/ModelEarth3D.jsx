@@ -179,7 +179,7 @@ export default function Earth({ position = [0, 0, 0], scale = 0.7 }) {
 
     // Cloud 1
     const targetY = cloudRef.current.position.y;
-    const dummy = { y: -0.5 };
+    const dummy = { y: -2.5 };
     gsap.from(dummy, {
       y: targetY,
       delay: 6,

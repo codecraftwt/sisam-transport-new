@@ -7,6 +7,11 @@ import './Hero.css';
 import Earth from '../Models3D/ModelEarth3D';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// Add smooth scrolling to the page
+if (typeof window !== 'undefined') {
+  document.documentElement.style.scrollBehavior = 'smooth';
+}
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -83,19 +88,24 @@ const Hero = () => {
     };
   }, []);
 
-// useLayoutEffect(() => {
-//   gsap.to(".hero-text", {
-//     y: 100,
-//     opacity: 1,
-//     // scale:3,
-//     scrollTrigger: {
-//       trigger: ".hero-text",
-//       start: "top 80%",
-//       end: "bottom 20%",
-//       scrub: 2,
-//     },
-//   });
-// }, []);
+  useLayoutEffect(() => {
+    if (!heroRef.current) return;
+
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: heroRef.current,
+        start: "top top",
+        end: "+=2600",
+        pin: true,
+        scrub: 3,
+        snap: false,
+        anticipatePin: 1,
+        markers: false,
+      });
+    }, heroRef);
+
+    return () => ctx.revert();
+  }, []);
 
 
   return (

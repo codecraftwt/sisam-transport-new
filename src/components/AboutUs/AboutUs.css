@@ -1,9 +1,10 @@
 .aboutus-section {
-  width: 100%;
+  width: 100vw;
   background: transparent;
   padding: 5vw 10px 5vw 10px;
   display: flex;
   justify-content: center;
+  height: 110vh;
 }
 
 .aboutus-container {

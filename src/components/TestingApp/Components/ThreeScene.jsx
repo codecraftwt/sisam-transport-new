@@ -50,6 +50,8 @@ export default function ThreeScene() {
       onCreated={({ camera }) => (cameraRef.current = camera)}
     >
       <ambientLight intensity={0.5} />
+      <directionalLight position={[10, 10,10]} intensity={2}/>
+
       <pointLight position={[10, 10, 10]} />
 
       <RotatingSphere />

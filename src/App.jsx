@@ -9,6 +9,11 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Cursor from './components/Cursor'
+import Testimonials from './components/Testimonials/Testimonials'
+import OurSolutions from './components/OurSolutions/OurSolutions'
+import OceanScene from './components/Ocean/Ocean'
+import Explore from './components/Explore/Explore'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,10 +28,14 @@ function App() {
         <Hero />
     </section>
     <section className=''>
+        <OceanScene />
+    </section>
+    <section className=''>
        <AboutUsSection />
     </section>
     <section className=''>
-       <ExploreCardsSection />
+       {/* <ExploreCardsSection /> */}
+       <Explore />
     </section>
     <section className=''>
       <Form />
@@ -35,9 +44,10 @@ function App() {
       <Footer />
     </section>
     <section className=''>
-      
+      <Testimonials/>
     </section>
     <section className=''>
+      <OurSolutions/>
       
     </section>
 
